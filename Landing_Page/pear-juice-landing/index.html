@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>푸른연구소 배도라지즙 | Pureun Lab Premium Juice</title>
     <meta name="description" content="100% 국내산 배와 도라지를 담은 프리미엄 건강즙. 첨가물 없는 자연 그대로의 맛, 푸른연구소.">
-    
+
     <!-- Fonts: Pretendard (via CDN) or Noto Sans KR for premium Korean typography -->
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- Favicon (placeholder) -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍐</text></svg>">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍐</text></svg>">
 </head>
+
 <body>
 
     <!-- Header / Navigation -->
@@ -25,39 +29,46 @@
                 <a href="#ingredients">Ingredients</a>
                 <a href="#review">Reviews</a>
             </nav>
-            <a href="https://smartstore.naver.com/01081843496/products/12666579962" target="_blank" class="btn btn-outline">Shop Now</a>
+            <a href="https://smartstore.naver.com/01081843496/products/12666579962" target="_blank"
+                class="btn btn-outline">Shop Now</a>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="hero-bg">
-            <img src="./assets/hero_bg.png" alt="Premium Pear Juice Pouch">
+        <div class="slideshow-wrapper">
+            <img src="./assets/hero_gen.png" alt="Premium Pear Juice Pouch" class="slideshow-img">
+            <img src="./assets/hero_variant.png" alt="Premium Pear Juice Pouch Variant" class="slideshow-img">
         </div>
         <div class="container hero-content">
             <span class="eyebrow fade-in">100% Domestic Ingredients</span>
             <h1 class="main-title fade-in delay-1">자연의 정수,<br>오롯이 담다.</h1>
             <p class="sub-text fade-in delay-2">푸른연구소 진한 배도라지즙<br>첨가물 없이 오직 자연만이 줄 수 있는 깊은 맛.</p>
-            <a href="https://smartstore.naver.com/01081843496/products/12666579962" class="btn btn-primary fade-in delay-3">구매하기</a>
+            <a href="https://smartstore.naver.com/01081843496/products/12666579962"
+                class="btn btn-primary fade-in delay-3">구매하기</a>
         </div>
     </section>
 
     <!-- Scrolling Marquee / Trust Badge -->
     <div class="marquee-section">
         <div class="marquee-content">
-            <span>NO ADDITIVES &nbsp; • &nbsp; 100% DOMESTIC PEAR & BALLOON FLOWER &nbsp; • &nbsp; HACCP CERTIFIED &nbsp; • &nbsp; FAMILY WELLNESS &nbsp; • &nbsp;</span>
-            <span>NO ADDITIVES &nbsp; • &nbsp; 100% DOMESTIC PEAR & BALLOON FLOWER &nbsp; • &nbsp; HACCP CERTIFIED &nbsp; • &nbsp; FAMILY WELLNESS &nbsp; • &nbsp;</span>
+            <span>NO ADDITIVES &nbsp; • &nbsp; 100% DOMESTIC PEAR & BALLOON FLOWER &nbsp; • &nbsp; HACCP CERTIFIED
+                &nbsp; • &nbsp; FAMILY WELLNESS &nbsp; • &nbsp;</span>
+            <span>NO ADDITIVES &nbsp; • &nbsp; 100% DOMESTIC PEAR & BALLOON FLOWER &nbsp; • &nbsp; HACCP CERTIFIED
+                &nbsp; • &nbsp; FAMILY WELLNESS &nbsp; • &nbsp;</span>
         </div>
     </div>
 
-    <!-- Intro / Philosophy Section -->
-    <section class="section intro-section" id="about">
-        <div class="container text-center">
-            <h2 class="section-title">Pure & Premium</h2>
-            <p class="section-desc">
-                아이부터 어른까지, 온 가족이 안심하고 마실 수 있는<br>
-                가장 정직하고 깨끗한 배도라지즙을 연구합니다.
-            </p>
+    <!-- Intro / Philosophy Section (Parallax) -->
+    <section class="section intro-section parallax-bg-section" id="about">
+        <div class="parallax-overlay">
+            <div class="container text-center">
+                <h2 class="section-title">Pure & Premium</h2>
+                <p class="section-desc">
+                    아이부터 어른까지, 온 가족이 안심하고 마실 수 있는<br>
+                    가장 정직하고 깨끗한 배도라지즙을 연구합니다.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -66,9 +77,9 @@
         <div class="container">
             <div class="grid-2-col">
                 <div class="card ingredient-card">
-                    <div class="card-image placeholder-bg">
-                        <!-- Placeholder for Ingredients Image -->
-                        <span class="placeholder-text">Ingredients Visual</span>
+                    <div class="card-image">
+                        <img src="./assets/pear_gen.png" alt="Korean Pear"
+                            style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="card-content">
                         <h3>Korean Pear</h3>
@@ -76,9 +87,9 @@
                     </div>
                 </div>
                 <div class="card ingredient-card">
-                    <div class="card-image placeholder-bg">
-                        <!-- Placeholder for Ingredients Image -->
-                        <span class="placeholder-text">Roots Visual</span>
+                    <div class="card-image">
+                        <img src="./assets/roots_gen.png" alt="Platycodon Roots"
+                            style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="card-content">
                         <h3>Platycodon</h3>
@@ -93,9 +104,11 @@
     <section class="section lifestyle-section">
         <div class="container">
             <div class="lifestyle-layout">
-                <div class="lifestyle-image placeholder-bg">
-                     <!-- Placeholder for Lifestyle Image -->
-                     <span class="placeholder-text">Lifestyle Moment</span>
+                <div class="lifestyle-image">
+                    <div class="lifestyle-slideshow">
+                        <img src="./assets/lifestyle_gen.png" alt="Healthy Lifestyle" class="slideshow-img">
+                        <img src="./assets/lifestyle_variant.png" alt="Healthy Lifestyle Variant" class="slideshow-img">
+                    </div>
                 </div>
                 <div class="lifestyle-text">
                     <h2>우리 아이를 위한<br>매일의 습관</h2>
@@ -124,4 +137,5 @@
     </footer>
 
 </body>
+
 </html>

@@ -385,3 +385,65 @@ ul { list-style: none; }
     
     .nav-links { display: none; } /* Simplified for mobile */
 }
+
+/* Premium Animations added */
+
+/* Slideshow Container */
+.slideshow-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.slideshow-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    animation: crossFade 16s infinite;
+}
+
+.slideshow-img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slideshow-img:nth-child(2) {
+    animation-delay: 8s;
+}
+
+/* For lifestyle section which is not full screen absolute */
+.lifestyle-slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes crossFade {
+    0% { opacity: 0; transform: scale(1.05); }
+    10% { opacity: 1; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1); }
+    60% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Parallax Background for About Section */
+.parallax-bg-section {
+    position: relative;
+    background-image: url('./assets/extra_image.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-overlay {
+    background-color: rgba(253, 252, 248, 0.92); /* Heavy overlay for text readability */
+    padding: 100px 0;
+}
